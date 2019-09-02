@@ -10,7 +10,6 @@
 <body>
     
     <header>
-        <h1>Header</h1>
         <div class="container"> <!--usamos container para centrar el contenido-->
             <h1>Header</h1>
         </div>
@@ -18,7 +17,8 @@
 
     <div class="container">
         <section class="main row"> <!--tipo fila-->
-                <!--con estas clases en el article hacemos la página responsive-->
+                <!--con estas clases en el article hacemos la página responsive en función del tamaño del dispositivo-->
+                <!--En el ejemplo de abajo podríamos eliminar col-lg-9 ya que es igual que el anterior, en BootStrap, si no se especifica nada, cogerá el valor anterior-->
                 <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9"> 
                     <p>
                         Article
@@ -38,6 +38,107 @@
                 <div class="cols-xs-12 col-sm-6 col-md-3 color1">Columna 3</div>
                 <div class="cols-xs-12 col-sm-6 col-md-3">Columna 4</div>
             </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <p class="text-right text-uppercase"><s>Ejemplo de texto tachado alineado a la derecha y todo en mayúsculas con text-uppercase</s></p>
+        <p class="text-center"><u>Ejemplo de texto subrayado centrado</u></p>
+        <p class="text-justify text-capitalize"><strong>Ejemplo de texto en negrita justificado con la primera inicial de cada palabra en mayúsuclas con text-capitalize</strong></p>
+        <p class="text-lowercase"><em>Ejemplo de texto en cursiva con todo en minúscula con text-lowercase</em></p>
+        <p><blockquote>Esto es un ejemplo de una cita.<footer>Este es el pie de una cita.<cite>Este es el ejemplo de una fuente en una cita</cite></footer></blockquote></p>
+        <p><code>Esto es un ejemplo de código monospace con etiqueta code</code></p>
+        <p><pre>Esto es un ejemplo de código con etiqueta pre, se recomienda usar ésta</pre></p>
+        <p class="text-danger">Ejemplo de texto con el color text-danger (rojo)</p>
+        <p class="text-warning bg-danger">Texto color text-warning (amarillo) sobre fondo bg-danger (rojo)</p>
+        <p></p>
+
+    </div>
+
+    <div class="container">
+        <div class="table-responsive"> <!--Esto hace a la tabla responsiva para cuando la usamos en dispositivos más pequeños y no tienen el ancho de todas las columnas-->
+            <table class="table table-striped table-hover"> <!--striped para que una fila si y otra no se muestre de diferente color, y hover para que al pasar por encima resalte-->
+                <tr">
+                    <th>Id</th>
+                    <th>NIF</th>
+                    <th>Nombre</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>44578202Q</td>
+                    <td>Juan Carlos Escobosa</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>74894166W</td>
+                    <td>Sonsoles Vilchez Jimenez</td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <!--formulario normal-->
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input class="form-control" id="nombre" type="text" placeholder="Nombre">
+            </div>
+            
+            <div class="form-group">
+                    <label for="option">Elige una opción</label>
+                    <select class="form-control" name="" id="option">
+                        <option value="">Opción #1</option>
+                        <option value="">Opción #2</option>
+                        <option value="">Opción #3</option>
+                        <option value="">Opción #4</option>
+                        <option value="">Opción #5</option>
+                    </select>
+            </div>
+                        
+            <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" name="" id="mensaje" placeholder="Escribe tu mensaje" cols="30" rows="2"></textarea>
+            </div>
+                        
+            <div class="form-group">
+                    <label for="archivo">Archivo:</label>
+                    <input type="file" id="archivo">
+                    <p>Máximo 50MB</p>
+                    
+            </div>
+            <button class="btn btn-primary">Enviar</button>
+            
+        </form>
+    </div>
+
+    <br>
+    
+    <!--formulario inline-->
+    <div class="container">
+        <form action="" class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="">Nombre:</label>
+                <input class="form-control" type="text" placeholder="Nombre">
+            </div>
+            
+            <div class="form-group">
+                <div class="input-group">
+                    <label class="sr-only" for="">Correo</label>
+                    <div class="input-group-addon">@</div>         
+                    <input class="form-control" id="correo" type="text" placeholder="Correo">
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="" id="">Recuérdame
+                </label>
+            </div>
+
+            <button class="btn btn-primary">Enviar</button>
+        </form>
     </div>
 
     <footer>

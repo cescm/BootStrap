@@ -3,7 +3,7 @@ header{
     color:#fff;
 }
 
-.main{
+main{
     background: #f2f2f2;
 }
 
@@ -12,7 +12,12 @@ header{
     color:#fff;
 }
 
-.aside{
+aside{
     background: #c0392b;
+    color:#fff;
+}
+
+footer{
+    background:#2c3e50;
     color:#fff;
 }
