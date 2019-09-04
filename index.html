@@ -6,15 +6,19 @@
     <title>Curso de Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <!--Theme-->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
 </head>
 <body>
     
+    <!--Header-->
     <header>
         <div class="container"> <!--usamos container para centrar el contenido-->
             <h1>Header</h1>
         </div>
     </header>
 
+    <!--Body-->
     <div class="container">
         <section class="main row"> <!--tipo fila-->
                 <!--con estas clases en el article hacemos la página responsive en función del tamaño del dispositivo-->
@@ -184,13 +188,58 @@
            </div>
        </form> 
 
-    
+    <!--Botones-->
+    <div class="container-fluid">
+        <h1>Botones</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <button class="btn btn-default">Default</button>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn bt-success">Success</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-link">Link</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#" class="">Default</a>
+                <a href="#" class="">Primary</a>
+                <a href="#" class="">Success</a>
+                <a href="#" class="">Info</a>
+                <a href="#" class="">Warning</a>
+                <a href="#" class="">Danger</a>
+                <a href="#" class="">Link</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Imágenes-->
+    <!--La clase img-responsive lo que hace es adaptar el tamaño al 100% del contenedor-->
+    <div class="container-fluid">
+        <h1>Imágenes</h1>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="http://lorempixel.com/700/700/" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="http://lorempixel.com/700/700/" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-2">
+                <img src="http://lorempixel.com/700/700/" class="img-responsive" alt="">
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!--Footer-->
     <footer>
         <div class="container">
             <h3>Juan Carlos Escobosa</h3>
         </div>
     </footer>
-    
 
     <script scr="js/jQuery.js"></script>
     <script scr="js/bootstrap.js"></script>
